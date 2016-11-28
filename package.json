@@ -13,14 +13,10 @@
     "url": "https://github.com/founderlab/react-dropzone-s3-uploader"
   },
   "scripts": {
-    "prepublish": "rm -rf ./lib && babel ./src --ignore '/node_modules/' --out-dir ./lib",
-    "build": "rm -rf ./lib && babel ./src --ignore '/node_modules/' --out-dir ./lib",
-    "watch": "rm -rf ./lib && babel ./src --ignore '/node_modules/' --watch --out-dir ./lib",
-    "test": "eval $(cat test/.env) mocha test/**/*.tests.js"
   },
   "dependencies": {
     "react-dropzone": "^3.7.3",
-    "react-s3-uploader": "^1.2.1"
+    "react-s3-uploader": "git://github.com/BaptWaels/react-s3-uploader.git"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0"
